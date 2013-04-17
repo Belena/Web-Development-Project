@@ -1,0 +1,51 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>My Site</title>
+    <link href="Styles/main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div id="centrecontainer">
+  <div id="outercontainer">
+    <div id="header">
+      <div id="headertitle">
+        <h1><sup>My Site</sup></h1>
+      </div>
+      <div id="headermenu">
+        <ul>
+          <li><a href="home.aspx">Home</a></li>
+          <li><a href="products.aspx">Products</a></li>
+          <li><a href="customers.aspx">Customers</a></li>
+          <li><a href="suppliers.aspx">Suppliers</a></li>
+          <li><a href="orderdetails.aspx">Orders</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div id="container">
+      <div id="containertext">
+       <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+        
+      </div>
+    </div>
+    <div id="footer">
+      <p>NCI 2013</a></p>
+    </div>
+  </div>
+</div>
+   
+    </form>
+</body>
+</html>
